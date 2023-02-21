@@ -1,0 +1,7 @@
+exog_columns:
+- spline1
+- spline2
+- spline3
+models_path: models
+n_lags: 2
+n_steps: 6
