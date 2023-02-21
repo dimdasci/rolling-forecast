@@ -1,3 +1,4 @@
+## install project 
 install: dirs jupyter
 
 ## make project directories
