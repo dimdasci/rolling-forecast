@@ -10,9 +10,9 @@ The models show the following performance on the validation dataset:
 
 The Jupyter notebook `notebook/rolling-forecast.ipynb` provides an explanation of the assumptions and decisions made in the project. It includes data analysis and transformation, model selection and evaluation.
 
-All visualization and data transformation functions, as well as model evaluation, are implemented as a local Python package, available both in project notebooks and in CLI commands.
+All visualization and data transformation functions, as well as model evaluation, are implemented as a local Python package (`src/`), available both in project notebooks and in CLI commands.
 
-The Inference CLI command can be run at any time of the year and provides a forecast for the next 6 months, taking into account the actual income for the previous two months and the name of the hotel for the forecast.
+The Inference CLI command (`src/cli/forecast.py`) can be run at any time of the year and provides a forecast for the next 6 months, taking into account the actual income for the previous two months and the name of the hotel for the forecast.
 
 ## Usage
 
