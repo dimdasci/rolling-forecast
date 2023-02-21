@@ -8,6 +8,10 @@ The models show the following performance on the validation dataset:
 - MAE 141.54K and 95% CI 21.51K-315.84K for City Hotel, and
 - MAE 114.23k and 95% confidence interval 5.39-466.84k for the resort hotel.
 
+The Jupyter notebook `notebook/rolling-forecast.ipynb` provides an explanation of the assumptions and decisions made in the project. It includes data analysis and transformation, model selection and evaluation.
+
+All visualization and data transformation functions, as well as model evaluation, are implemented as a local Python package, available both in project notebooks and in CLI commands.
+
 The Inference CLI command can be run at any time of the year and provides a forecast for the next 6 months, taking into account the actual income for the previous two months and the name of the hotel for the forecast.
 
 ## Usage
@@ -71,16 +75,16 @@ January 2023 of $200,000, run the command
 
 ## Project structure
 
-- models — contains fitted models and spline transformer
-- notebooks 
-  - rolling-forecast.ipynb — Jupyter notebook with data analysis, model selection and evaluation 
-  - data - dataset that includes booking transactions from 2 different hotels located in 2 different locations
-- src
-  - cli — provides a command-line interface for making rolling 6-months revenue forecast
-  - data — contains functions for working with booking transactions and calculate revenue
-  - eda — contains functions for exploratory data analysis of time-series data
-  - model — contains functions for creating a periodic spline transformer and for evaluating a model
-  - utils — collection of functions for common file I/O and logging tasks
-- Makefile — contains commands to install and run project
-- params.yaml — contains configuration parameters, saved during model evaluation stage 
-- requirements.txt — list of project dependencies
+- `models` — contains fitted models and spline transformer
+- `notebooks` 
+  - `rolling-forecast.ipynb` — Jupyter notebook with data analysis, model selection and evaluation 
+  - `data` - dataset that includes booking transactions from 2 different hotels located in 2 different locations
+- `src`
+  - `cli` — provides a command-line interface for making rolling 6-months revenue forecast
+  - `data` — contains functions for working with booking transactions and calculate revenue
+  - `eda` — contains functions for exploratory data analysis of time-series data
+  - `model` — contains functions for creating a periodic spline transformer and for evaluating a model
+  - `utils` — collection of functions for common file I/O and logging tasks
+- `Makefile` — contains commands to install and run project
+- `params.yaml` — contains configuration parameters, saved during model evaluation stage 
+- `requirements.txt` — list of project dependencies
