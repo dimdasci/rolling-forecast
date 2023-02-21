@@ -5,6 +5,7 @@ dirs:
 	mkdir -p notebooks
 	mkdir -p notebooks/data
 	mkdir -p models
+	mkdir -p logs
 
 ## install local package and dependencies
 requirements:
