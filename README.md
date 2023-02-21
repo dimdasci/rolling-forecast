@@ -6,7 +6,7 @@ The time series for each hotel are treated as independent and two different mode
 
 The models show the following performance on the validation dataset:
 - MAE 141.54K and 95% CI 21.51K-315.84K for City Hotel, and
-- MAE 114.23k and 95% CI 5.39-466.84k for the Resort hotel.
+- MAE 114.23k and 95% CI 5.39-466.84k for Resort hotel.
 
 The Jupyter notebook `notebook/rolling-forecast.ipynb` provides an explanation of the assumptions and decisions made in the project. It includes data analysis and transformation, model selection and evaluation.
 
